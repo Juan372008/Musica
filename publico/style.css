@@ -1,0 +1,15 @@
+/* Estilos para pantallas grandes */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* Estilos para pantallas menores a 768px */
+  }
