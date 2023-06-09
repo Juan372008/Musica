@@ -13,3 +13,9 @@ body {
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
   }
+.piano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
