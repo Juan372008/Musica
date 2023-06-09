@@ -13,3 +13,23 @@ body {
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
   }
+
+/* Fondo de pantalla -- para reclamar a
+llama a Pascual*/
+
+
+body {
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Fondo de pantalla*/
+}
+body {
+  background-image: url('ruta/a/tu/imagen.jpg');  /*Tamaño de la imagen*/
+  background-size: cover;
+}
+body {
+  background-image: url('ruta/a/tu/imagen.jpg');  /* Gira la imagen para ponerla horizonal*/
+  background-repeat: repeat-x;
+}
+body {
+  background-image: url('ruta/a/tu/imagen.jpg');  /* Para poner la imagen en una posición especifica de la pantalla*/
+  background-position: center top;                    
+}
