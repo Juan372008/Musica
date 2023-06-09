@@ -19,17 +19,5 @@ llama a Pascual*/
 
 
 body {
-  background-image: url('ruta/a/tu/imagen.jpg'); /* Fondo de pantalla*/
-}
-body {
-  background-image: url('ruta/a/tu/imagen.jpg');  /*Tamaño de la imagen*/
-  background-size: cover;
-}
-body {
-  background-image: url('ruta/a/tu/imagen.jpg');  /* Gira la imagen para ponerla horizonal*/
-  background-repeat: repeat-x;
-}
-body {
-  background-image: url('ruta/a/tu/imagen.jpg');  /* Para poner la imagen en una posición especifica de la pantalla*/
-  background-position: center top;                    
+  background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
 }
