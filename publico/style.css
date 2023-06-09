@@ -27,7 +27,22 @@ body {
 
   }
   .nav-bar{
-    
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+  .elemento-nav{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
   }
   
   /* Estilos para pantallas pequeñas */
