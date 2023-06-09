@@ -39,3 +39,11 @@ body {
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
   }
+
+/* Fondo de pantalla -- para reclamar a
+llama a Pascual*/
+
+
+body {
+  background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
+}
