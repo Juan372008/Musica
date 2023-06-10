@@ -1,5 +1,4 @@
-
-let keys = document.querySelectorAll('.white-key, .black-key');
+let keys = document.querySelectorAll('.white-key');
 
 keys.forEach(function(key) {
   key.addEventListener('click', function() {
@@ -7,9 +6,9 @@ keys.forEach(function(key) {
     let audio = document.getElementById('audio-' + note);
     
     // Зміна стану клавіші (додайте власні стилі для зміни вигляду)
-    this.classList.add('active');
+    this.classList.add('active-white');
     setTimeout(function() {
-      key.classList.remove('active');
+      key.classList.remove('active-white');
     }, 300);
     
     // Відтворення аудіофайлу
@@ -19,6 +18,42 @@ keys.forEach(function(key) {
 });
 
 
+
+
+
+/*  Segunda manera
+let whiteKeys = document.querySelectorAll('.white-key');
+let blackKeys = document.querySelectorAll('.black-key');
+
+whiteKeys.forEach(function(key) {
+  key.addEventListener('click', function() {
+    playAudio(this.id);
+    animateKey(this);
+  });
+});
+
+blackKeys.forEach(function(key) {
+  key.addEventListener('click', function() {
+    playAudio(this.id);
+    animateKey(this);
+  });
+});
+
+function playAudio(keyId) {
+  // Відтворення аудіо-файлу відповідно до ноти
+  let audio = new Audio(keyId + '.mp3');
+  audio.play();
+}
+
+function animateKey(key) {
+  // Анімація клавіші при кліку
+  key.classList.add('active-white');
+  setTimeout(function() {
+    key.classList.remove('active-white');
+  }, 300);
+}
+
+*/
 
 
 
