@@ -5,7 +5,6 @@ keys.forEach(function(key) {
     let note = this.id;
     let audio = document.getElementById('audio-' + note);
     
-    // Зміна стану клавіші (додайте власні стилі для зміни вигляду)
     this.classList.add('active-white');
     setTimeout(function() {
       key.classList.remove('active-white');
@@ -17,7 +16,27 @@ keys.forEach(function(key) {
   });
 });
 
+/* 
+let keys = document.querySelectorAll('.white-key');
 
+keys.forEach(function(key) {
+  key.addEventListener('click', function() {
+    let note = this.id;
+    let audio = document.getElementById('audio-' + note);
+    
+    // Зміна стану клавіші (додайте власні стилі для зміни вигляду)
+    this.classList.add('active-white');
+    setTimeout(function() {
+      key.classList.remove('active-white');
+    }, 300);
+    
+    // Відтворення аудіофайлу
+    audio.currentTime = 0;
+    audio.play();
+  });
+}); 
+
+*/
 
 
 
