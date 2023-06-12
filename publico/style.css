@@ -2,17 +2,232 @@
 body {
     font-size: 16px;
     line-height: 1.5;
+    width: 100%;
+    background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
+  }
+  @media (max-width: 480px) {
+   
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    background-image: url('/img/imagen-grupo-3.png');
+    }
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  @media only screen and (max-width: 768px) {
+   
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+     background-image: url('/img/imagen-grupo-3.png');
+  }
+  @media (max-width: 480px) {
+    body .content {
+      font-size: 16px;
+      line-height: 1.5;
+      width: 100%;
+    }
+    
+  .logo {
+    width:10vh;
+    height: 10vh;
+    margin-left: 10px;
+  }
+  @media (max-width: 480px) {
+    width:10vh;
+    height: 10vh;
+    margin-left: 10px;
+    }
+  @media only screen and (max-width: 768px) {
+    width: 10vh;
+    height: 10vh;
+    margin-left: 10px;
+  }
+
+ 
+  .titulo{
+    
+    text-align: center;
+
+  }
+  @media (max-width: 480px) {
+    text-align: center;
+
+    }
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  .div-titulo{
+    
+    text-align: center;
   }
   
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 767px) {
-    body {
-      font-size: 14px;
+  @media (max-width: 480px) {
+    text-align: center;
     }
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  .logo-y-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row ;
+    background-color: rgb(228, 229, 231);
+    align-items: center;
+    }
+  @media (max-width: 480px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row ;
+    background-color: rgb(228, 229, 231);
+    align-items: center;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row ;
+      background-color: rgb(228, 229, 231);
+      align-items: center;
+    }
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+ 
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-evenly;
   }
   @media only screen and (max-width: 768px) {
-    /* Estilos para pantallas menores a 768px */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-evenly;
   }
-
-
+  .elemento-nav{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+   
+  }
+  @media (max-width: 480px) {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   
+  .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+  }
+  
+/* Fondo de pantalla -- para reclamar a
+llama a Pascual*/
+
+
+/*body {
+  background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
+/*}
+/*@media only screen and (max-width: 480px) {
+  background-image: url('/img/imagen-grupo-3.png');
+  }
