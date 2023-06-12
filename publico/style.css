@@ -13,6 +13,108 @@ body {
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
   }
+  
+.piano-contenador{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #909090;
+  border-radius: 50px 50px 50px 50px;
+  width: 90%;
+  height: 60vh;
+}
+
+  .piano {
+    display: flex;
+    width: 100%;
+      align-items: center;
+      justify-content: center;
+  
+
+  }
+  
+  /*  .white-key {
+    width: 60px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid black;
+  }    without name */ 
+
+  .white-key {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .key-label {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .active-white{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60px;
+    height: 345px;
+    background: linear-gradient(180deg, #fcfafa 15%, #a7a6a6 100%);
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 10px;  /* !!!No funcciona */
+  }
+  
+  .black-key {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    margin-left: -40px;
+    margin-right: -10px;
+    margin-bottom: 160px;
+  }
+  .key-label-bk {
+    text-align: center;
+    font-size: larger;
+    color: white;
+  }
+  .active-black {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50px;
+    height: 196px;
+    background: linear-gradient(180deg, #141414 10%, #646464 100%);
+    border-radius: 10%;
+    margin-left: -40px;
+    margin-right: -10px;
+  }
+
+  .black-key-no {
+    width: 50px;
+    height: 200px;
+    background-color: white;
+    border-top: 1px solid black;
+    margin-left: -40px;
+    margin-right: -10px;
+  }
+
+
+    
+  
+  
+  
+
 
 /* Fondo de pantalla -- para reclamar a
 llama a Pascual*/
