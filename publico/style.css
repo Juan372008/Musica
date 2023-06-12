@@ -1,27 +1,19 @@
 /* Estilos para pantallas grandes */
-body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 
-  @media (max-width: 1024px) {
-    /* Estilos para pantallas menores a 1024px */
-    .piano-contenador{
-
-      background-color: #b92a2a;
-
-  }
-}
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 767px) {
-    body {
-      font-size: 14px;
-    }
-  }
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
+    .piano-contenador{
+      background-color: #ec0c0c;
+    }
   }
+
+  @media only screen and (max-width: 1024px) {
+    /* !!!!MI OTRO ESTILOS!!! para pantallas menores a 1024px */
+    .piano-contenador{
+      background-color: #6349d6;
+  }
+}
+
 
 
 
@@ -45,8 +37,6 @@ body {
     width: 100%;
       align-items: center;
       justify-content: center;
-  
-
   }
   
   /*  .white-key {
@@ -112,14 +102,6 @@ body {
     margin-right: -10px;
   }
 
-  .black-key-no {
-    width: 50px;
-    height: 200px;
-    background-color: white;
-    border-top: 1px solid black;
-    margin-left: -40px;
-    margin-right: -10px;
-  }
 
 
     
