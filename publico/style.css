@@ -2,6 +2,8 @@
 body {
     font-size: 16px;
     line-height: 1.5;
+    background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
+
   }
   .logo {
     width: 60px;
@@ -63,6 +65,4 @@ body {
 llama a Pascual*/
 
 
-body {
-  background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
-}
+
