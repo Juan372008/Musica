@@ -1,0 +1,21 @@
+.piepagina{
+    background-color: gray;
+    border-color: grey;
+    position: absolute;
+    bottom: 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+.foto{
+    width: 4%;
+    height: 4%;
+    margin-left: 2%;
+    
+}
+.copy{
+    width: 1%;
+    height: 1%;
+}

@@ -1,5 +1,65 @@
 /* Estilos para pantallas grandes */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
 
+  }
+  .logo {
+    width: 60px;
+    height: 8vh;
+    margin-left: -200px;
+  }
+  .titulo{
+    
+    text-align: center;
+
+  }
+  .div-titulo{
+    
+    text-align: center;
+  }
+  .logo-y-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row ;
+    background-color: rgb(228, 229, 231);
+    align-items: center;
+
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+  .elemento-nav{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+    .nav-bar{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* Estilos para pantallas menores a 768px */
+  }
   
 .piano-contenador{
   display: flex;
