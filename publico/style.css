@@ -60,119 +60,190 @@ body {
   @media only screen and (max-width: 768px) {
     /* Estilos para pantallas menores a 768px */
   }
-  
-.piano-contenador{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #909090;
-  border-radius: 50px 50px 50px 50px;
-  width: 90%;
-  height: 60vh;
+
+
+/*División del piano ---de---Pascual*/
+
+#piano{
+  height: 500px;
+  width: 1900px;
+ 
 }
 
-  .piano {
-    display: flex;
-    width: 100%;
-      align-items: center;
-      justify-content: center;
-  
-
-  }
-  
-  /*  .white-key {
-    width: 60px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid black;
-  }    without name */ 
-
-  .white-key {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 60px;
-    height: 350px;
-    background-color: white;
-    border: 1px solid black;
-  }
-  .key-label {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bolder;
-    margin-bottom: 20px;
-  }
-  .active-white{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 60px;
-    height: 345px;
-    background: linear-gradient(180deg, #fcfafa 15%, #a7a6a6 100%);
-    border: 1px solid black;
-    font-weight: bolder;
-    font-size: 10px;  /* !!!No funcciona */
-  }
-  
- .black-key {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 50px;
-    height: 200px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10%;
-    margin-left: -40px;
-    margin-right: -10px;
-    margin-bottom: 160px;
-  }
-  .key-label-bk {
-    text-align: center;
-    font-size: larger;
-    color: white;
-  }
-  .active-black {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 50px;
-    height: 196px;
-    background: linear-gradient(180deg, #141414 10%, #646464 100%);
-    border-radius: 10%;
-    margin-left: -40px;
-    margin-right: -10px;
-  }
-
-  .black-key-no {
-    width: 50px;
-    height: 200px;
-    background-color: white;
-    border-top: 1px solid black;
-    margin-left: -40px;
-    margin-right: -10px;
-  }
-
-
-    
-  
-  
-  
-
-
-/* Fondo de pantalla -- para reclamar a
-llama a Pascual*/
-
-
-body {
-  background-image: url('/img/imagen-grupo-3.png'); /* Fondo de pantalla*/
+#piano-keys{
+  height: 250px;
+  width: 2150px;
+  position: relative;
+  top: 50px;
+  left: 10px;
 }
-.footdivision{
-  width: 30%;
-  height: 1000%;
-  display: flex;
 
+#white-keys{
+  width: 2150px;
+}
+
+.white-key{
+  height: 250px;
+  width: 50px;
+  margin-right: -4px;
+  border: 1px solid black;
+  background: white;
+  display: inline-block;
+  user-select: none; 
+}
+
+.white-key:hover{
+  cursor: pointer;
+}
+
+.white-key:active{
+  background: linear-gradient(180deg, white 100px, grey 250px);
+  height: 248px;
+}
+
+#black-keys{
+  width: 1000px;
+  z-index: 0;
+  position: relative;
+  bottom: 251px;
+  left: 37.5px;
+  user-select: none; 
+}
+
+.black-key{
+  width: 25px;
+  height: 180px;
+  background: black;
+  display: inline-block;
+  user-select: none; 
+  position: relative;
+}
+
+.black-key:hover{
+  cursor: pointer;
+}
+
+.black-key:active{
+  background: grey;
+}
+
+#black-key-25{
+  left: 1021px;
+}
+
+#black-key-24{
+  left: 998px;
+}
+
+#black-key-23{
+  left: 975px;
+}
+
+#black-key-22{
+  left: 901px;
+}
+
+#black-key-21{
+  left: 877px;
+}
+
+#black-key-20{
+  left: 802px;
+}
+
+#black-key-19{
+  left: 779px;
+}
+
+#black-key-18{
+  left: 756px;
+}
+
+#black-key-17{
+  left: 682px;
+}
+
+#black-key-16{
+  left: 658px;
+}
+
+#black-key-15{
+  left: 584px;
+}
+
+#black-key-14{
+  left: 560px;
+}
+
+#black-key-13{
+  left: 537px;
+}
+
+#black-key-12{
+  left: 462px;
+}
+
+#black-key-11{
+  left: 439px;
+}
+
+#black-key-10{
+  left: 364px;
+}
+
+#black-key-09{
+  left: 341px;
+}
+
+#black-key-08{
+  left: 319px;
+}
+
+#black-key-07{
+  left: 243px;
+}
+
+#black-key-06{
+  left: 220px;
+}
+
+#black-key-05{
+  left: 145px;
+}
+
+#black-key-04{
+  left: 123px;
+}
+
+#black-key-03{
+  left: 100px;
+}
+
+#black-key-02{
+  left: 25px;
+}
+
+#black-key-01{
+  left: 0px;
+}
+
+.keyboard-button-trigger{
+  font-size: 40px;
+  position: relative;
+  top: 120px;
+  left: 10px;
+  font-family: arial;
+  user-select: none; 
+}
+
+#show-triggers{
+  position: relative;
+  top: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+  font-size: 19px;
+  background: rgb(16, 1, 40);
+  color: white;
 }
