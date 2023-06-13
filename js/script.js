@@ -38,20 +38,10 @@ keys2.forEach(function(key2) {
 });
 */
 
-// Map of keys
+// Map of keys 
 const noteKeyMap = {
-  'a': 'Do', 
-  's': 'Re',
-  'd': 'Mi',
-  'f': 'Fa',
-  'g': 'Sol',
-  'h': 'La',
-  'j': 'Si',
-  'q': 'Re♭',
-  'w': 'Mi♭',
-  'e': 'Sol♭',
-  'r': 'La♭',
-  't': 'Si♭',
+  'a': 'Do', 's': 'Re', 'd': 'Mi', 'f': 'Fa', 'g': 'Sol', 'h': 'La', 'j': 'Si',
+  'q': 'Re♭', 'w': 'Mi♭', 'e': 'Sol♭', 'r': 'La♭', 't': 'Si♭',
 };
 
 // todos teclas blancas  (funcciona)
