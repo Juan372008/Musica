@@ -1,3 +1,4 @@
+/*  __________________PRIMERA MANERA__________________
 // Teclas blancas
 let keys = document.querySelectorAll('.white-key');
 
@@ -35,3 +36,74 @@ keys2.forEach(function(key2) {
     audio.play();
   });
 });
+*/
+
+// Map of keys
+const noteKeyMap = {
+  'q': 'Do',
+  'w': 'Re',
+  'e': 'Mi',
+  'r': 'fa',
+  't': 'sol',
+  'y': 'la',
+  'u': 'si',
+};
+
+// todos teclas blancas  (funcciona)
+let keys = document.querySelectorAll('.white-key');
+console.log(keys)
+
+// metodo de teclas 
+keys.forEach(function(key) {
+  // funccia KLICK (funcciona)
+  key.addEventListener('click', function() {
+    playNote(this.id); // sound note
+    animateKey(this); // animacion tecla
+  });
+  console.log(key)
+
+// Sonido audio  (funcciona)
+
+function playNote(note) {
+  let audio = document.getElementById('audio-' + note);
+  audio.play();
+}
+
+
+// funccia animacion (funcciona)
+function animateKey(key) {
+  key.classList.add('active-white');
+  setTimeout(function() {
+    key.classList.remove('active-white');
+  }, 300);
+}
+
+  // pushing keys  ( !!! NO funcciona)
+  document.addEventListener('keydown', function(event) {
+    const key = event.key.toLowerCase();
+    if (noteKeyMap.hasOwnProperty(key)) {
+      const note = noteKeyMap[key];
+      const targetKey = document.querySelector(`[data-note="${note}"]`);
+      console.log(targetKey);
+      console.log(note);
+      if (targetKey) {
+        playNoteAndAnimate(targetKey);
+
+      }
+    }
+  });
+    
+  });
+  // Функція для відтворення звуку ноти та зміни стилю клавіші
+function playNoteAndAnimate(key) {
+  const note = key.getAttribute('data-note');
+  playNote(note);
+  animateKey(key);
+}
+ // Функція для відтворення звуку ноти
+function playNote(note) {
+  const audio = new Audio(note + '.mp3');
+  audio.play();
+}
+
+
