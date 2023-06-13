@@ -47,11 +47,11 @@ const noteKeyMap = {
   'g': 'Sol',
   'h': 'La',
   'j': 'Si',
-  'k': 'Re♭',
-  'l': 'Mi♭',
-  'q': 'Sol♭',
-  'w': 'La♭',
-  'e': 'Si♭',
+  'q': 'Re♭',
+  'w': 'Mi♭',
+  'e': 'Sol♭',
+  'r': 'La♭',
+  't': 'Si♭',
 };
 
 // todos teclas blancas  (funcciona)
