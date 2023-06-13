@@ -40,17 +40,22 @@ keys2.forEach(function(key2) {
 
 // Map of keys
 const noteKeyMap = {
-  'q': 'Do',
-  'w': 'Re',
-  'e': 'Mi',
-  'r': 'fa',
-  't': 'sol',
-  'y': 'la',
-  'u': 'si',
+  'a': 'Do',
+  's': 'Re',
+  'd': 'Mi',
+  'f': 'Fa',
+  'g': 'Sol',
+  'h': 'La',
+  'j': 'Si',
+  'k': 'Re♭',
+  'l': 'Mi♭',
+  'q': 'Sol♭',
+  'w': 'La♭',
+  'e': 'Si♭',
 };
 
 // todos teclas blancas  (funcciona)
-let keys = document.querySelectorAll('.white-key');
+let keys = document.querySelectorAll('.white-key, .black-key');
 console.log(keys)
 
 // metodo de teclas 
