@@ -1,12 +1,9 @@
 .piepagina{
-    background-color: gray;
-    border-color: grey;
+    background-color: rgb(229, 219, 219);
+    width: 100vh;
+    height: 30vh;
 }
-.contenedor{
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
-}
+
 .foto{
     width: 4%;
     height: 4%;
@@ -16,4 +13,9 @@
 .copy{
     width: 1%;
     height: 1%;
+}
+footer{
+    width: 100vh;
+    height: 30vh;
+    justify-content: left;
 }

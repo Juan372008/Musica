@@ -1,21 +1,24 @@
 .piepagina{
-    background-color: gray;
-    border-color: grey;
-    position: absolute;
-    bottom: 0;
-}
-.contenedor{
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
-}
-.foto{
-    width: 4%;
-    height: 4%;
-    margin-left: 2%;
+    background-color: rgb(#e4e5e7);
+    border-color: rgb(#e4e5e7);
     
+    flex-direction: row;
+}
+
+.foto{
+    width: 15%;
+    height: 15;
+    margin-left: 2%;
+    background-color: rgb(161, 150, 243);
 }
 .copy{
     width: 1%;
     height: 1%;
 }
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+

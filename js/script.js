@@ -106,7 +106,7 @@ let whiteKeys = [
   
 ];
 
-//takes a keyID and changes the css temproarily to show that button had been pressed when using the keyboard to play notes. Reverts to white again after 200ms
+//Cambia de color durante 200ms, cuando pulsas la tecla//
 function visualWhiteKeyPress(keyID){ 
   document.getElementById("key" + keyID).style.background = "linear-gradient(180deg, white 100px, grey 250px)";
   setTimeout(
@@ -117,18 +117,18 @@ function visualWhiteKeyPress(keyID){
 
 document.onkeydown = function(event){
   let kp = String.fromCharCode(event.keyCode);
-  playAudioFromKeyCode(kp);
+  playAudioFromKeyCode(kp);/* pulsar una tecla kp*/
   visualWhiteKeyPress(kp);
 }
 
-document.onmousedown = function(event){ // plays audio regardless of whether or not the letter is clicked or the button is clicked
+document.onmousedown = function(event){ //Se ilumina cuando pulsas con el ratón//
   if(event.target.className == "keyboard-button-trigger"){
     playAudioFromDivID(event.path[1].id);
   }
   else playAudioFromDivID(event.target.id);
 }
 
-function playAudioFromDivID(id){
+function playAudioFromDivID(id){  //Cuando dejas de pulsar la tecla, hace el sonido y vuelve a esperar a pulsar otra tecla
   for(let x = 0; x < whiteKeys.length; x++){
     if(id == whiteKeys[x].keyNo){
       new Audio(whiteKeys[x].mp3Link).play();
@@ -143,3 +143,21 @@ function playAudioFromKeyCode(keyCode){
     }
   }
 }
+// Teclas blancas, de Victor//
+let keys = document.querySelectorAll('.white-key');
+
+keys.forEach(function(key) {
+  key.addEventListener('click', function() {
+    let note = this.id;
+    let audio = document.getElementById('audio-' + note);
+    
+    this.classList.add('active-white');
+    setTimeout(function() {
+      key.classList.remove('active-white');
+    }, 300);
+    
+    // Play audio
+    audio.currentTime = 0;
+    audio.play();
+  });
+});

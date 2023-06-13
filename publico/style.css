@@ -247,3 +247,9 @@ body {
   background: rgb(16, 1, 40);
   color: white;
 }
+/*Footer 2*---Pascual*/
+
+.container{
+  
+  justify-content: flex-start;
+}
