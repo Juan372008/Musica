@@ -98,7 +98,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   width: 40px;
-  height: 250px;
+  height: 280px;
   background-color: white;
   border: 1px solid black;
 }
@@ -120,7 +120,7 @@ body {
 .key-label-bk {
   font-size: large;
   border: #fcfafa 1px;
-}
+  }
 }
 
 @media (max-width: 768px) {
