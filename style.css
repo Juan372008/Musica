@@ -1,0 +1,21 @@
+.piepagina{
+    background-color: rgb(229, 219, 219);
+    width: 100vh;
+    height: 30vh;
+}
+
+.foto{
+    width: 4%;
+    height: 4%;
+    margin-left: 2%;
+    
+}
+.copy{
+    width: 1%;
+    height: 1%;
+}
+footer{
+    width: 100vh;
+    height: 30vh;
+    justify-content: left;
+}
