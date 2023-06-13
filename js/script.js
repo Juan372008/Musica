@@ -83,7 +83,7 @@ function animateKey(key) {
     const key = event.key.toLowerCase();
     if (noteKeyMap.hasOwnProperty(key)) {
       const note = noteKeyMap[key];
-      const targetKey = document.querySelector(`[data-note="${note}"]`);
+      const targetKey = document.querySelector(`[id="${note}"]`);
       console.log(targetKey);
       console.log(note);
       if (targetKey) {
@@ -105,5 +105,14 @@ function playNote(note) {
   const audio = new Audio(note + '.mp3');
   audio.play();
 }
+// Функція для зміни стилю клавіші при натисканні клавіші
+function animateKey(key) {
+  key.classList.add('active-white');
+  setTimeout(function() {
+    key.classList.remove('active-white');
+  }, 500);
+}
+
+//_________________________
 
 
