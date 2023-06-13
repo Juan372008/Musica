@@ -40,7 +40,7 @@ keys2.forEach(function(key2) {
 
 // Map of keys
 const noteKeyMap = {
-  'a': 'Do',
+  'a': 'Do', 
   's': 'Re',
   'd': 'Mi',
   'f': 'Fa',
@@ -115,7 +115,7 @@ function animateKey(key) {
   key.classList.add('active-white');
   setTimeout(function() {
     key.classList.remove('active-white');
-  }, 500);
+  }, 20);
 }
 
 //_________________________
