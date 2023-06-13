@@ -1,6 +1,6 @@
 .piepagina{
-    background-color: rgb(#e4e5e7);
-    border-color: rgb(#e4e5e7);
+    background-color: rgb(228, 229, 231);
+    border-color: rgb(228, 229, 231);
     
     flex-direction: row;
 }
@@ -9,7 +9,6 @@
     width: 15%;
     height: 15;
     margin-left: 2%;
-    background-color: rgb(161, 150, 243);
 }
 .copy{
     width: 1%;
