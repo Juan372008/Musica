@@ -73,7 +73,7 @@ function animateKey(key) {
   }, 300);
 }
 
-  // pushing keys  ( !!! NO funcciona)
+  // pushing keys  ( !!! funcciona pero mas alto)
   document.addEventListener('keydown', function(event) {
     const key = event.key.toLowerCase();
     if (noteKeyMap.hasOwnProperty(key)) {
@@ -89,18 +89,18 @@ function animateKey(key) {
   });
     
   });
-  // Функція для відтворення звуку ноти та зміни стилю клавіші
+  // funcion sonido y estilos
 function playNoteAndAnimate(key) {
   const note = key.getAttribute('data-note');
   playNote(note);
   animateKey(key);
 }
- // Функція для відтворення звуку ноти
+ // sonido
 function playNote(note) {
   const audio = new Audio(note + '.mp3');
   audio.play();
 }
-// Функція для зміни стилю клавіші при натисканні клавіші
+// estilo
 function animateKey(key) {
   key.classList.add('active-white');
   setTimeout(function() {
